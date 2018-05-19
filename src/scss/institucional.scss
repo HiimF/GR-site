@@ -1,0 +1,57 @@
+#institucional {
+  padding: 0 10%;
+  position: relative;
+
+	&:before {
+		content: '';
+		height: 110%;
+		width: 40px;
+		position: absolute;
+		background: url($img-path + 'yellow-line.svg') no-repeat;
+		background-position: center;
+    background-size: 100%;
+    right: 10%;
+    top: -10%;
+	}
+
+  .white {
+  	background-color: $white;
+  	padding: responsive(50, 100) 0; 	
+  }
+
+	.sectionTitle {
+		text-align: right;
+	}
+
+	.text {
+		max-width: responsive(500, 1000);
+		margin: 0 auto; 
+		font-size: responsive(14, 18);
+		font-weight: 300;
+		color: $blue;
+		text-align: right;
+
+		i {
+			font-weight: normal;
+  		font-style: italic;
+		}
+
+		b {
+			font-weight: bold;
+			i {
+				font-weight: bold;
+			}
+		}
+
+		mark {
+			font-weight: 500;
+  		font-style: italic;
+  		background: transparent;
+  		color: $beige;
+
+  		.bold {
+  			font-style: normal;
+  		}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+#contact {
+	margin-bottom: responsive(50, 100);
+	.container {
+		display: flex;
+		align-items: flex-end;
+
+		.info {
+			width: 25%;
+			color: $blue;
+			font-size: responsive(12, 20);
+			margin-left: 20px;
+
+			a {
+				color: $blue;
+				display: block;
+			}
+
+			.title {
+				font-size: responsive(32, 72);
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
+	}
+}

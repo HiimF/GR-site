@@ -1,0 +1,37 @@
+#about-us {
+	padding: responsive(50, 100) 10%;
+	box-sizing: border-box;
+	background: url($img-path + 'blue-line.svg') no-repeat bottom left;
+  margin-bottom: responsive(50, 100);
+
+	.text {
+		max-width: responsive(500, 1000);
+		margin: 0 auto; 
+		font-size: responsive(14, 18);
+		font-weight: 300;
+		color: $blue;
+
+		i {
+			font-weight: normal;
+  		font-style: italic;
+		}
+
+		b {
+			font-weight: bold;
+			i {
+				font-weight: bold;
+			}
+		}
+
+		mark {
+			font-weight: 500;
+  		font-style: italic;
+  		background: transparent;
+  		color: $beige;
+
+  		.bold {
+  			font-style: normal;
+  		}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+#benefits {
+	padding: responsive(50, 100) 0;
+
+	.sectionTitle {
+		text-align: center;
+		color: $beige;
+	}
+
+	.container {
+		background: url($img-path + 'blue-line.svg') no-repeat top left;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 50px 10% 0;
+		box-sizing: border-box;
+		.text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			color: $blue;
+			width: 20%;
+			min-width: 300px;
+			font-size: responsive(12, 18);
+			margin: 30px;
+
+			.title {
+				color: $beige;
+				font-weight: bold;
+				font-size: responsive(15, 28);
+				margin-bottom: 10px;
+			}
+
+			svg {
+				height: 50px;
+				fill: $gray;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

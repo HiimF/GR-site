@@ -1,0 +1,76 @@
+#mission {
+	margin-bottom: responsive(50, 100);
+	background: url($img-path + 'blue-line.svg') no-repeat bottom left;
+	.top-images {
+		display: flex;
+
+		img {
+			width: responsive(200, 400);
+			height: auto;
+			max-height: 250px; 
+		}
+	}
+
+	.more-about {
+		display: flex;
+		margin-left: responsive(100, 200);
+
+		.texts {
+			width: responsive(200, 400);
+			margin-right: responsive(100, 200);
+			font-size: responsive(12, 18);
+			margin-bottom: 50px;
+
+			i {
+				font-weight: normal;
+	  		font-style: italic;
+			}
+
+			b {
+				font-weight: bold;
+				i {
+					font-weight: bold;
+				}
+			}
+
+			mark {
+				font-weight: 500;
+	  		font-style: italic;
+	  		background: transparent;
+	  		color: $beige;
+
+	  		.bold {
+	  			font-style: normal;
+	  		}
+	  	}
+
+			.text {
+				margin-top: 40px;
+			}
+
+			.title {
+				font-size: responsive(30, 70);
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $beige;
+				opacity: 0.2;
+				margin-bottom: 10px;
+			}
+		}
+
+		img {
+			width: responsive(200, 400);
+			height: auto;
+			max-height: 250px; 
+		}
+
+		.images {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.title {
+			display: block;
+		}
+	}
+}

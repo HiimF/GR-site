@@ -1,0 +1,21 @@
+#footer {
+	background-color: $beige;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5%;
+	box-sizing: border-box;
+	align-items: center;
+
+	.copyright {
+		font-size: responsive(12, 20);
+		font-style: italic;
+	}
+
+	.social {
+		svg {
+			fill: $gray;
+			height: 30px;
+			margin: 20px;
+		}
+	}
+}

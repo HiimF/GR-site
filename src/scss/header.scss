@@ -1,0 +1,44 @@
+#header {
+	background-color: $blue;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+  padding: 20px 5%;
+  box-sizing: border-box;
+
+	.logo{
+		img {
+			height: responsive(80, 140);
+			width: auto;
+		}
+	}
+
+	.menu {
+		display: flex;
+
+		li {
+			font-size: responsive(16, 26);
+			color: $white;
+			font-family: Gotham;
+			text-transform: uppercase;
+			font-weight: bold;
+			a {
+				margin-right: responsive(10, 20);
+				color: $white;
+  			font-style: italic;
+			}
+			&:after {
+				content: 'I';
+				margin-right: responsive(10, 20);
+			}
+			&:last-child {
+				a {
+					margin-right: 0;
+				}
+				&:after {
+					content: '';
+				}
+			}
+		}
+	}
+}

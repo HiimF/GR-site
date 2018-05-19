@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Gotham;
+  background: url($img-path + 'yellow-line.svg') no-repeat;
+  background-position: 15% 0;
+  background-size: 40px;
+}
+
+h2 {
+  font-size: responsive(20, 31);
+  text-transform: uppercase;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $black;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sectionTitle {
+  font-size: responsive(50, 120);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $blue;
+  opacity: 0.2;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+}
