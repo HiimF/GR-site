@@ -27,6 +27,10 @@
 			a {
 				color: $blue;
 				display: block;
+				transition: color .5s;
+				&:hover {
+					color: $beige;
+				}
 			}
 
 			.title {

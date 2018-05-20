@@ -1,6 +1,8 @@
 #about {
-	background: url($img-path + 'building.svg') no-repeat bottom right;
-	background-size: 30% 80%;
+	@media(min-width: 1000px) {
+		background: url($img-path + 'building.svg') no-repeat bottom right;
+		background-size: 30% 80%;
+	}
 }
 
 #about-us {

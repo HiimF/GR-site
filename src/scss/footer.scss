@@ -16,9 +16,13 @@
 			fill: $gray;
 			height: responsive(20, 30);
 			margin: responsive(5, 20);
+			transition: fill .5s;
 			@media(min-width: 1000px) {
 				height: 30px;
 				margin: 20px;
+			}
+			&:hover {
+				fill: $blue;
 			}
 		}
 	}
