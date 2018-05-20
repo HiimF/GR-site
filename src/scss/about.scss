@@ -1,3 +1,8 @@
+#about {
+	background: url($img-path + 'building.svg') no-repeat bottom right;
+	background-size: 30% 80%;
+}
+
 #about-us {
 	padding: responsive(50, 100) 10%;
 	box-sizing: border-box;
@@ -7,7 +12,7 @@
 	.text {
 		max-width: responsive(500, 1000);
 		margin: 0 auto; 
-		font-size: responsive(14, 18);
+		font-size: responsive(12, 18);
 		font-weight: 300;
 		color: $blue;
 

@@ -5,21 +5,31 @@
 		display: flex;
 
 		img {
-			width: responsive(200, 400);
+			width: 33.3%;
 			height: auto;
-			max-height: 250px; 
+			max-height: responsive(80, 250); 
+
+			@media(min-width: 1000px) {
+				width: responsive(200, 300);
+				max-height: 250px;
+			}
 		}
 	}
 
 	.more-about {
 		display: flex;
-		margin-left: responsive(100, 200);
+		margin-left: responsive(100, 150);
 
 		.texts {
-			width: responsive(200, 400);
-			margin-right: responsive(100, 200);
+			width: 200px;
+			margin: 0 auto 30px;
 			font-size: responsive(12, 18);
-			margin-bottom: 50px;
+
+			@media(min-width: 1000px) {
+				width: responsive(200, 300);
+				margin: 0 0 50px;
+				margin-right: responsive(100, 150);
+			}
 
 			i {
 				font-weight: normal;
@@ -59,14 +69,18 @@
 		}
 
 		img {
-			width: responsive(200, 400);
+			width: responsive(200, 300);
 			height: auto;
 			max-height: 250px; 
 		}
 
 		.images {
-			display: flex;
-			flex-direction: column;
+			display: none;
+
+			@media(min-width: 1000px) {
+				display: flex;
+				flex-direction: column;
+			}
 		}
 
 		.title {

@@ -14,8 +14,12 @@
 	.social {
 		svg {
 			fill: $gray;
-			height: 30px;
-			margin: 20px;
+			height: responsive(20, 30);
+			margin: responsive(5, 20);
+			@media(min-width: 1000px) {
+				height: 30px;
+				margin: 20px;
+			}
 		}
 	}
 }

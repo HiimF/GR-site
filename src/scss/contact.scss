@@ -1,14 +1,28 @@
 #contact {
 	margin-bottom: responsive(50, 100);
 	.container {
-		display: flex;
-		align-items: flex-end;
+		@media(min-width: 1000px) {
+			display: flex;
+			align-items: flex-end;
+		}
+
+		iframe {
+			width: 100%;
+			margin-bottom: 30px;
+			@media(min-width: 1000px) {
+				width: 65%;
+				margin-bottom: 0;
+				height: 450px;
+			}
+		}
 
 		.info {
-			width: 25%;
 			color: $blue;
 			font-size: responsive(12, 20);
 			margin-left: 20px;
+			@media(min-width: 1000px) {
+				width: 25%;
+			}
 
 			a {
 				color: $blue;
